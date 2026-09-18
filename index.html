@@ -1,0 +1,1269 @@
+```html
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+<title>For My Cutie ♡ | mycutiehappy.space</title>
+
+<meta name="description" content="A little corner of the internet made especially for my Cutie.">
+
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+
+<link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600&family=Playfair+Display:wght@500;600;700&display=swap" rel="stylesheet">
+
+<style>
+
+/* =========================================================
+   RESET
+========================================================= */
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  min-height: 100vh;
+  font-family: 'DM Sans', sans-serif;
+  background: #09060e;
+  color: #fff;
+  overflow-x: hidden;
+}
+
+
+/* =========================================================
+   BACKGROUND
+========================================================= */
+
+.background {
+  position: fixed;
+  inset: 0;
+  z-index: -1;
+
+  background:
+    radial-gradient(
+      circle at 15% 15%,
+      rgba(215, 72, 150, .16),
+      transparent 30%
+    ),
+
+    radial-gradient(
+      circle at 85% 80%,
+      rgba(111, 75, 190, .14),
+      transparent 32%
+    ),
+
+    #09060e;
+}
+
+.background::after {
+  content: "";
+
+  position: absolute;
+  inset: 0;
+
+  background-image:
+    radial-gradient(
+      rgba(255,255,255,.12) 1px,
+      transparent 1px
+    );
+
+  background-size: 42px 42px;
+
+  opacity: .18;
+}
+
+
+/* =========================================================
+   MAIN CONTAINER
+========================================================= */
+
+.container {
+  width: min(1120px, calc(100% - 32px));
+
+  margin: auto;
+
+  padding:
+    clamp(45px, 8vw, 90px)
+    0
+    40px;
+
+  text-align: center;
+}
+
+
+/* =========================================================
+   TOP TEXT
+========================================================= */
+
+.eyebrow {
+  color: #d99abb;
+
+  text-transform: uppercase;
+
+  letter-spacing:
+    clamp(2px, 1vw, 5px);
+
+  font-size: 10px;
+
+  margin-bottom: 26px;
+}
+
+h1 {
+  font-family: 'Playfair Display', serif;
+
+  font-size:
+    clamp(44px, 8vw, 100px);
+
+  font-weight: 600;
+
+  line-height: 1.05;
+
+  background:
+    linear-gradient(
+      120deg,
+      #fff 15%,
+      #f2a5cc 60%,
+      #c5a4ef
+    );
+
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+
+  margin-bottom: 22px;
+}
+
+.intro {
+  color: #9c8ba5;
+
+  font-size:
+    clamp(12px, 2vw, 15px);
+
+  letter-spacing: .7px;
+
+  line-height: 1.8;
+
+  margin-bottom:
+    clamp(45px, 7vw, 70px);
+}
+
+.intro strong {
+  color: #e8afd0;
+
+  font-weight: 500;
+}
+
+
+/* =========================================================
+   COUNTDOWN TITLE
+========================================================= */
+
+.section-label {
+  font-size: 10px;
+
+  letter-spacing: 3px;
+
+  text-transform: uppercase;
+
+  color: #7e6a89;
+
+  margin-bottom: 22px;
+}
+
+
+/* =========================================================
+   COUNTDOWN GRID
+========================================================= */
+
+.countdown {
+  display: grid;
+
+  grid-template-columns:
+    repeat(4, 1fr);
+
+  gap:
+    clamp(10px, 2vw, 18px);
+
+  margin-bottom: 55px;
+}
+
+
+/* =========================================================
+   COUNTDOWN CARDS
+========================================================= */
+
+.card {
+  position: relative;
+
+  min-width: 0;
+
+  padding:
+    clamp(25px, 4vw, 40px)
+    12px
+    clamp(22px, 3vw, 32px);
+
+  border:
+    1px solid rgba(255,255,255,.09);
+
+  border-radius: 20px;
+
+  background:
+    linear-gradient(
+      145deg,
+      rgba(255,255,255,.075),
+      rgba(255,255,255,.018)
+    );
+
+  backdrop-filter: blur(20px);
+
+  overflow: hidden;
+
+  transition:
+    transform .3s ease,
+    border-color .3s ease;
+}
+
+.card::before {
+  content: "";
+
+  position: absolute;
+
+  top: 0;
+
+  left: 18%;
+  right: 18%;
+
+  height: 1px;
+
+  background:
+    linear-gradient(
+      90deg,
+      transparent,
+      #e79ac4,
+      transparent
+    );
+}
+
+.card:hover {
+  transform: translateY(-7px);
+
+  border-color:
+    rgba(230,150,195,.35);
+}
+
+.icon {
+  font-size: 17px;
+
+  margin-bottom: 18px;
+
+  opacity: .75;
+}
+
+.value {
+  font-size:
+    clamp(23px, 4vw, 47px);
+
+  font-weight: 600;
+
+  letter-spacing: -2px;
+
+  color: #f9edf5;
+
+  line-height: 1.15;
+
+  overflow-wrap: anywhere;
+}
+
+.unit {
+  color: #947e9d;
+
+  text-transform: uppercase;
+
+  letter-spacing:
+    clamp(1px, .5vw, 3px);
+
+  font-size:
+    clamp(8px, 1vw, 10px);
+
+  margin-top: 13px;
+}
+
+
+/* =========================================================
+   SECONDS CARD
+========================================================= */
+
+.seconds-card {
+  grid-column: 2 / span 2;
+}
+
+
+/* =========================================================
+   LOVE MESSAGE
+========================================================= */
+
+.love-message {
+  max-width: 720px;
+
+  margin: 0 auto;
+
+  padding:
+    clamp(35px, 6vw, 55px)
+    20px;
+
+  border-top:
+    1px solid rgba(255,255,255,.08);
+
+  border-bottom:
+    1px solid rgba(255,255,255,.08);
+}
+
+.love-label {
+  color: #e39bc2;
+
+  font-size: 10px;
+
+  letter-spacing: 4px;
+
+  text-transform: uppercase;
+
+  margin-bottom: 24px;
+}
+
+.love-message h2 {
+  font-family: 'Playfair Display', serif;
+
+  font-size:
+    clamp(24px, 4vw, 39px);
+
+  font-weight: 500;
+
+  line-height: 1.5;
+
+  color: #e8d9e7;
+}
+
+.love-message h2 span {
+  color: #f2a8ce;
+}
+
+.love-message p {
+  margin-top: 24px;
+
+  color: #918099;
+
+  font-size:
+    clamp(12px, 2vw, 14px);
+
+  line-height: 1.9;
+}
+
+
+/* =========================================================
+   BIG I LOVE YOU
+========================================================= */
+
+.big-love {
+  margin-top: 65px;
+
+  padding:
+    45px
+    20px
+    35px;
+
+  position: relative;
+
+  border-radius: 28px;
+
+  background:
+    radial-gradient(
+      circle at center,
+      rgba(240, 120, 180, .12),
+      transparent 65%
+    );
+
+  overflow: hidden;
+}
+
+
+/* Heart */
+
+.love-heart {
+  font-size:
+    clamp(45px, 8vw, 75px);
+
+  color: #f27bb4;
+
+  line-height: 1;
+
+  margin-bottom: 20px;
+
+  animation:
+    heartbeat 1.4s ease-in-out infinite;
+
+  filter:
+    drop-shadow(
+      0 0 20px
+      rgba(242,123,180,.4)
+    );
+}
+
+
+/* Big text */
+
+.love-text {
+  font-family:
+    'Playfair Display',
+    serif;
+
+  font-size:
+    clamp(32px, 7vw, 76px);
+
+  font-weight: 700;
+
+  line-height: 1.05;
+
+  letter-spacing:
+    clamp(1px, .5vw, 4px);
+
+  background:
+    linear-gradient(
+      120deg,
+      #ffffff,
+      #ffb4d7,
+      #f47db8,
+      #d6a5f4
+    );
+
+  -webkit-background-clip: text;
+
+  -webkit-text-fill-color: transparent;
+
+  animation:
+    loveGlow 3s ease-in-out infinite;
+}
+
+
+/* Signature */
+
+.love-name {
+  margin-top: 25px;
+
+  color: #a990a5;
+
+  font-size: 11px;
+
+  letter-spacing: 3px;
+
+  text-transform: uppercase;
+}
+
+
+/* =========================================================
+   HEART ANIMATION
+========================================================= */
+
+@keyframes heartbeat {
+
+  0%, 100% {
+    transform: scale(1);
+  }
+
+  15% {
+    transform: scale(1.15);
+  }
+
+  30% {
+    transform: scale(1);
+  }
+
+  45% {
+    transform: scale(1.08);
+  }
+
+  60% {
+    transform: scale(1);
+  }
+
+}
+
+
+/* =========================================================
+   LOVE GLOW
+========================================================= */
+
+@keyframes loveGlow {
+
+  0%, 100% {
+    filter:
+      drop-shadow(
+        0 0 0
+        rgba(244,125,184,0)
+      );
+  }
+
+  50% {
+    filter:
+      drop-shadow(
+        0 0 25px
+        rgba(244,125,184,.25)
+      );
+  }
+
+}
+
+
+/* =========================================================
+   BIRTHDAY REVEAL
+========================================================= */
+
+.birthday-state {
+  display: none;
+
+  animation:
+    reveal 1.5s ease;
+
+  padding: 20px;
+}
+
+.birthday-state h2 {
+  font-family:
+    'Playfair Display',
+    serif;
+
+  font-size:
+    clamp(38px, 8vw, 90px);
+
+  line-height: 1.2;
+
+  background:
+    linear-gradient(
+      120deg,
+      #fff,
+      #f1a6cc
+    );
+
+  -webkit-background-clip: text;
+
+  -webkit-text-fill-color: transparent;
+}
+
+.birthday-state p {
+  margin-top: 25px;
+
+  color: #c9b4c9;
+
+  font-family:
+    'Playfair Display',
+    serif;
+
+  font-size:
+    clamp(17px, 3vw, 24px);
+
+  line-height: 1.8;
+}
+
+
+/* =========================================================
+   REVEAL ANIMATION
+========================================================= */
+
+@keyframes reveal {
+
+  from {
+    opacity: 0;
+
+    transform:
+      translateY(25px);
+  }
+
+  to {
+    opacity: 1;
+
+    transform:
+      translateY(0);
+  }
+
+}
+
+
+/* =========================================================
+   FOOTER
+========================================================= */
+
+footer {
+  margin-top: 35px;
+
+  color: #4d4055;
+
+  font-size: 10px;
+
+  letter-spacing: 2px;
+}
+
+footer span {
+  color: #c56b9b;
+}
+
+
+/* =========================================================
+   TABLET
+========================================================= */
+
+@media (max-width: 850px) {
+
+  .countdown {
+    grid-template-columns:
+      repeat(2, 1fr);
+
+    max-width: 650px;
+
+    margin-left: auto;
+    margin-right: auto;
+  }
+
+  .seconds-card {
+    grid-column:
+      1 / span 2;
+
+    max-width: 320px;
+
+    width: 100%;
+
+    margin: auto;
+  }
+
+}
+
+
+/* =========================================================
+   MOBILE
+========================================================= */
+
+@media (max-width: 480px) {
+
+  .container {
+    width:
+      min(
+        100% - 24px,
+        390px
+      );
+  }
+
+  .countdown {
+    gap: 10px;
+  }
+
+  .card {
+    border-radius: 16px;
+
+    padding:
+      24px
+      7px;
+  }
+
+  .value {
+    font-size:
+      clamp(
+        22px,
+        7vw,
+        30px
+      );
+
+    letter-spacing: -1px;
+  }
+
+  .icon {
+    font-size: 15px;
+
+    margin-bottom: 13px;
+  }
+
+  .love-message {
+    padding-left: 8px;
+    padding-right: 8px;
+  }
+
+  .love-message h2 br {
+    display: none;
+  }
+
+  .big-love {
+    margin-top: 45px;
+
+    padding:
+      35px
+      10px
+      30px;
+  }
+
+  .love-text {
+    font-size:
+      clamp(
+        29px,
+        10vw,
+        48px
+      );
+  }
+
+  .love-name {
+    font-size: 9px;
+
+    letter-spacing: 2px;
+  }
+
+  footer {
+    margin-top: 28px;
+  }
+
+}
+
+
+/* =========================================================
+   VERY SMALL SCREENS
+========================================================= */
+
+@media (max-width: 340px) {
+
+  .value {
+    font-size: 20px;
+  }
+
+  .unit {
+    font-size: 7px;
+  }
+
+  .love-text {
+    font-size: 27px;
+  }
+
+}
+
+</style>
+</head>
+
+
+<body>
+
+<div class="background"></div>
+
+
+<main class="container">
+
+
+  <!-- =====================================================
+       HEADER
+  ====================================================== -->
+
+  <div class="eyebrow">
+    A little corner of the internet
+  </div>
+
+
+  <h1>
+    For My Cutie ♡
+  </h1>
+
+
+  <p class="intro">
+
+    Counting every moment until
+    <strong>18 October 2026</strong>
+
+    <br>
+
+    The day my favorite person was born.
+
+  </p>
+
+
+
+  <!-- =====================================================
+       COUNTDOWN
+  ====================================================== -->
+
+  <div class="section-label">
+
+    Every way of counting the time left
+
+  </div>
+
+
+  <section
+    class="countdown"
+    id="countdown"
+  >
+
+
+    <!-- WEEKS -->
+
+    <div class="card">
+
+      <div class="icon">
+        ◷
+      </div>
+
+      <div
+        class="value"
+        id="weeks"
+      >
+        0
+      </div>
+
+      <div class="unit">
+        Total Weeks
+      </div>
+
+    </div>
+
+
+
+    <!-- DAYS -->
+
+    <div class="card">
+
+      <div class="icon">
+        ◌
+      </div>
+
+      <div
+        class="value"
+        id="days"
+      >
+        0
+      </div>
+
+      <div class="unit">
+        Total Days
+      </div>
+
+    </div>
+
+
+
+    <!-- HOURS -->
+
+    <div class="card">
+
+      <div class="icon">
+        ⌁
+      </div>
+
+      <div
+        class="value"
+        id="hours"
+      >
+        0
+      </div>
+
+      <div class="unit">
+        Total Hours
+      </div>
+
+    </div>
+
+
+
+    <!-- MINUTES -->
+
+    <div class="card">
+
+      <div class="icon">
+        ⏱
+      </div>
+
+      <div
+        class="value"
+        id="minutes"
+      >
+        0
+      </div>
+
+      <div class="unit">
+        Total Minutes
+      </div>
+
+    </div>
+
+
+
+    <!-- SECONDS -->
+
+    <div
+      class="card seconds-card"
+    >
+
+      <div class="icon">
+        ✦
+      </div>
+
+      <div
+        class="value"
+        id="seconds"
+      >
+        0
+      </div>
+
+      <div class="unit">
+        Total Seconds
+      </div>
+
+    </div>
+
+
+  </section>
+
+
+
+  <!-- =====================================================
+       LOVE MESSAGE
+  ====================================================== -->
+
+  <section
+    class="love-message"
+    id="message"
+  >
+
+
+    <div class="love-label">
+
+      For you, Meri Jaan ♡
+
+    </div>
+
+
+    <h2>
+
+      I love you,
+      <span>Cutie.</span>
+
+      <br>
+
+      More than these numbers
+      could ever count.
+
+    </h2>
+
+
+    <p>
+
+      Every day, every hour, every minute and every second
+      brings us closer to your special day.
+
+      But honestly, I don't need a countdown to know
+      how special you are to me.
+
+      <br><br>
+
+      You are my favorite thought,
+      my happiest smile,
+      and my most beautiful reason
+      to look forward to tomorrow.
+
+      I love you, Meri Jaan. Always. ♡
+
+    </p>
+
+
+
+    <!-- =================================================
+         BIG LOVE
+    ================================================== -->
+
+    <div class="big-love">
+
+
+      <div class="love-heart">
+        ♥
+      </div>
+
+
+      <div class="love-text">
+
+        I LOVEEE YOUUU
+
+        <br>
+
+        SOOO MUCHH
+
+      </div>
+
+
+      <div class="love-name">
+
+        — Your Cutie ♡
+
+      </div>
+
+
+    </div>
+
+
+  </section>
+
+
+
+  <!-- =====================================================
+       BIRTHDAY SCREEN
+  ====================================================== -->
+
+  <section
+    class="birthday-state"
+    id="birthday"
+  >
+
+
+    <h2>
+
+      Happy Birthday,
+
+      <br>
+
+      My Cutie ♡
+
+    </h2>
+
+
+    <p>
+
+      Today is your day, Meri Jaan.
+
+      <br>
+
+      I love you more than words
+      can ever explain.
+
+    </p>
+
+
+  </section>
+
+
+
+  <!-- =====================================================
+       FOOTER
+  ====================================================== -->
+
+  <footer>
+
+    Made with
+    <span>♥</span>
+    · Especially for Meri Jaan
+
+  </footer>
+
+
+</main>
+
+
+
+<script>
+
+/* =========================================================
+   BIRTHDAY TARGET
+========================================================= */
+
+/*
+   18 October 2026
+   12:00:00 AM
+   India Standard Time (UTC +5:30)
+
+   IST midnight =
+   17 October 2026
+   18:30:00 UTC
+
+   Using UTC here prevents the browser/device timezone
+   from changing the target time.
+*/
+
+const targetDateUTC =
+  Date.UTC(
+    2026,
+    9,
+    17,
+    18,
+    30,
+    0
+  );
+
+
+/* =========================================================
+   NUMBER FORMAT
+========================================================= */
+
+function formatNumber(number) {
+
+  return number.toLocaleString("en-IN");
+
+}
+
+
+/* =========================================================
+   COUNTDOWN
+========================================================= */
+
+function updateCountdown() {
+
+
+  const remaining =
+    targetDateUTC - Date.now();
+
+
+
+  /* =======================================================
+     BIRTHDAY HAS ARRIVED
+  ======================================================== */
+
+  if (remaining <= 0) {
+
+
+    document
+      .getElementById("countdown")
+      .style
+      .display = "none";
+
+
+    document
+      .getElementById("message")
+      .style
+      .display = "none";
+
+
+    document
+      .getElementById("birthday")
+      .style
+      .display = "block";
+
+
+    return;
+
+  }
+
+
+
+  /* =======================================================
+     TOTAL SECONDS
+  ======================================================== */
+
+  const totalSeconds =
+    Math.floor(
+      remaining / 1000
+    );
+
+
+
+  /* =======================================================
+     TOTAL WEEKS
+  ======================================================== */
+
+  const totalWeeks =
+    Math.floor(
+      totalSeconds / 604800
+    );
+
+
+
+  /* =======================================================
+     TOTAL DAYS
+  ======================================================== */
+
+  const totalDays =
+    Math.floor(
+      totalSeconds / 86400
+    );
+
+
+
+  /* =======================================================
+     TOTAL HOURS
+  ======================================================== */
+
+  const totalHours =
+    Math.floor(
+      totalSeconds / 3600
+    );
+
+
+
+  /* =======================================================
+     TOTAL MINUTES
+  ======================================================== */
+
+  const totalMinutes =
+    Math.floor(
+      totalSeconds / 60
+    );
+
+
+
+  /* =======================================================
+     UPDATE SCREEN
+  ======================================================== */
+
+  document
+    .getElementById("weeks")
+    .textContent =
+      formatNumber(
+        totalWeeks
+      );
+
+
+  document
+    .getElementById("days")
+    .textContent =
+      formatNumber(
+        totalDays
+      );
+
+
+  document
+    .getElementById("hours")
+    .textContent =
+      formatNumber(
+        totalHours
+      );
+
+
+  document
+    .getElementById("minutes")
+    .textContent =
+      formatNumber(
+        totalMinutes
+      );
+
+
+  document
+    .getElementById("seconds")
+    .textContent =
+      formatNumber(
+        totalSeconds
+      );
+
+}
+
+
+/* =========================================================
+   START COUNTDOWN
+========================================================= */
+
+updateCountdown();
+
+setInterval(
+  updateCountdown,
+  1000
+);
+
+</script>
+
+
+</body>
+</html>
+```
