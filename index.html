@@ -1,21 +1,19 @@
 <!doctype html>
-<html lang="en">
+<html>
   <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <meta name="theme-color" content="#0b0710" />
-    <title>mycutiehappy.space ♡</title>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width,initial-scale=1" />
+    <title>Happy Birthday Mishti ♡</title>
     <style>
-      @import url("https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600;700&family=Pacifico&family=Playfair+Display:wght@600;700&display=swap");
+      @import url("https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@500;600;700&family=DM+Sans:wght@400;500;600;700&family=Pacifico&display=swap");
       :root {
-        --bg: #0a0710;
-        --panel: #15111a;
-        --border: #332936;
-        --text: #f8edf5;
-        --muted: #9c8b9c;
-        --pink: #e43b68;
-        --pink2: #ff6f93;
-        --soft: #241521;
+        --b: #0d070e;
+        --p: #20111b;
+        --p2: #291522;
+        --pink: #f05b86;
+        --light: #fff3f7;
+        --muted: #c2a9b7;
+        --line: #402838;
       }
       * {
         box-sizing: border-box;
@@ -25,113 +23,98 @@
       }
       body {
         margin: 0;
-        color: var(--text);
+        background:
+          radial-gradient(circle at 20% 0, #40142e, transparent 28%),
+          radial-gradient(circle at 90% 10%, #341328, transparent 25%),
+          linear-gradient(145deg, #100810, #09060b);
+        color: var(--light);
         font-family: "DM Sans", sans-serif;
-        background: radial-gradient(
-          circle at 50% -20%,
-          #211224 0,
-          #0a0710 48%,
-          #08060d 100%
-        );
-        min-height: 100vh;
-        overflow-x: hidden;
       }
       body:before {
         content: "";
         position: fixed;
         inset: 0;
         pointer-events: none;
-        opacity: 0.18;
+        opacity: 0.13;
         background-image: radial-gradient(#fff 1px, transparent 1px);
-        background-size: 31px 31px;
+        background-size: 34px 34px;
       }
-      nav {
+      .nav {
         position: sticky;
         top: 0;
-        z-index: 20;
+        z-index: 9;
+        padding: 15px 5%;
         display: flex;
-        align-items: center;
         justify-content: space-between;
-        padding: 17px 6%;
-        background: rgba(10, 7, 16, 0.82);
+        align-items: center;
+        background: #100810dd;
         backdrop-filter: blur(18px);
-        border-bottom: 1px solid #211a25;
+        border-bottom: 1px solid #2c1d28;
       }
       .logo {
-        font-family: Pacifico, cursive;
-        font-size: 25px;
+        font: 23px Pacifico;
         color: #fff;
       }
       .logo span {
-        color: var(--pink2);
+        color: #ff91ad;
       }
-      nav .links {
+      .links {
         display: flex;
-        gap: 24px;
+        gap: 20px;
         align-items: center;
       }
-      nav a {
-        color: #bcaabb;
+      .links a {
+        color: #c8afbd;
         text-decoration: none;
-        font-size: 14px;
-        font-weight: 600;
+        font-size: 13px;
       }
-      nav a:hover {
-        color: #fff;
-      }
-      .love-btn {
+      .btn {
+        border: 0;
         background: var(--pink);
-        color: #fff !important;
-        padding: 11px 20px;
+        color: #fff;
+        padding: 12px 20px;
         border-radius: 999px;
+        cursor: pointer;
       }
       .hero {
-        position: relative;
-        z-index: 1;
-        max-width: 1050px;
-        margin: auto;
-        padding: 75px 24px 45px;
+        min-height: 750px;
+        display: grid;
+        place-items: center;
         text-align: center;
+        padding: 80px 22px;
+        position: relative;
       }
+      .hero > div {
+        max-width: 900px;
+      }
+      .eyebrow,
       .kicker {
-        font-size: 11px;
         letter-spacing: 4px;
-        color: #8e7890;
         text-transform: uppercase;
+        font-size: 11px;
+        color: #a98a9d;
       }
       .hero h1 {
-        font-family: "Playfair Display", serif;
-        font-size: clamp(42px, 7vw, 76px);
-        line-height: 1.04;
-        margin: 20px 0 18px;
-        color: #fff;
+        font: 600 clamp(70px, 13vw, 150px)/0.78 "Cormorant Garamond";
+        margin: 25px 0;
       }
-      .hero h1 span {
-        color: #ff5d86;
+      .hero h1 em {
+        display: block;
+        font: normal 0.55em Pacifico;
+        color: #ff86a7;
+        margin-top: 25px;
       }
       .hero p {
-        max-width: 730px;
-        margin: auto;
-        font-size: 16px;
-        line-height: 1.8;
-        color: #aa9aaa;
-      }
-      .hand {
-        font-family: Pacifico, cursive;
-        color: #f35b82;
-        font-size: 22px;
-        margin-top: 23px;
-      }
-      .hearts {
-        position: absolute;
-        inset: 0;
-        pointer-events: none;
+        max-width: 680px;
+        margin: 30px auto;
+        color: var(--muted);
+        line-height: 1.85;
       }
       .heart {
         position: absolute;
-        color: #b92e57;
-        font-size: 28px;
-        animation: float 5s ease-in-out infinite;
+        color: #df527e;
+        font-size: 30px;
+        animation: f 5s ease-in-out infinite;
       }
       .h1 {
         left: 8%;
@@ -139,647 +122,741 @@
       }
       .h2 {
         right: 9%;
-        top: 35%;
-        animation-delay: 1.3s;
+        top: 32%;
+        animation-delay: 1s;
       }
       .h3 {
-        left: 16%;
-        bottom: 8%;
+        left: 15%;
+        bottom: 15%;
         animation-delay: 2s;
       }
       .h4 {
         right: 15%;
-        bottom: 12%;
+        bottom: 10%;
         animation-delay: 3s;
       }
-      @keyframes float {
+      @keyframes f {
         50% {
-          transform: translateY(-16px) rotate(8deg);
+          transform: translateY(-18px) rotate(8deg);
         }
       }
-
-      .countdown-wrap {
-        max-width: 1160px;
-        margin: 10px auto 80px;
-        padding: 0 24px;
-        position: relative;
-        z-index: 2;
-      }
-      .countdown {
-        display: grid;
-        grid-template-columns: repeat(4, 1fr);
-        gap: 18px;
-      }
-      .timer-card {
-        background: linear-gradient(
-          145deg,
-          rgba(28, 22, 31, 0.96),
-          rgba(17, 14, 21, 0.96)
-        );
-        border: 1px solid var(--border);
-        border-radius: 20px;
-        min-height: 195px;
-        padding: 35px 18px 25px;
-        text-align: center;
-        box-shadow: 0 18px 45px rgba(0, 0, 0, 0.25);
-        position: relative;
-        overflow: hidden;
-      }
-      .timer-card:after {
-        content: "";
-        position: absolute;
-        top: 0;
-        left: 18%;
-        right: 18%;
-        height: 1px;
-        background: linear-gradient(90deg, transparent, #a83c65, transparent);
-      }
-      .timer-card.wide {
-        grid-column: 2/4;
-      }
-      .timer-icon {
-        height: 22px;
-        color: #b7abb8;
-        font-size: 15px;
-        margin-bottom: 13px;
-      }
-      .num {
-        font-size: 46px;
-        line-height: 1.05;
-        font-weight: 600;
-        letter-spacing: -1.5px;
-        color: #fbf0f7;
-        font-variant-numeric: tabular-nums;
-        word-break: break-word;
-      }
-      .label {
-        margin-top: 15px;
-        color: #9c829c;
-        font-size: 10px;
-        letter-spacing: 3px;
-        text-transform: uppercase;
-      }
-      .next {
-        text-align: center;
-        margin: 25px auto 0;
-        color: #806e81;
-        font-size: 13px;
-        letter-spacing: 0.5px;
-      }
-      .next b {
-        color: #d55a7d;
-      }
-
-
-      .commitment-wrap {
-        max-width: 1120px;
-        margin: 0 auto 80px;
-        padding: 0 24px;
-        position: relative;
-        z-index: 2;
-      }
-
-      .commitment-box {
-        position: relative;
-        overflow: hidden;
-        background:
-          radial-gradient(circle at 50% 0%, rgba(228, 59, 104, 0.16), transparent 45%),
-          linear-gradient(145deg, #19121b, #100c14);
-        border: 1px solid #3a2735;
-        border-radius: 24px;
-        padding: 42px 28px 34px;
-        text-align: center;
-        box-shadow: 0 20px 55px rgba(0, 0, 0, 0.3);
-      }
-
-      .commitment-box:before,
-      .commitment-box:after {
-        content: "♡";
-        position: absolute;
-        color: #b92e57;
-        opacity: 0.35;
-        font-size: 48px;
-      }
-
-      .commitment-box:before {
-        left: 5%;
-        top: 18%;
-        transform: rotate(-15deg);
-      }
-
-      .commitment-box:after {
-        right: 5%;
-        bottom: 15%;
-        transform: rotate(15deg);
-      }
-
-      .commitment-kicker {
-        color: #b9849a;
-        font-size: 11px;
-        letter-spacing: 4px;
-        text-transform: uppercase;
-        margin-bottom: 12px;
-      }
-
-      .commitment-title {
-        font-family: "Playfair Display", serif;
-        font-size: clamp(32px, 5vw, 48px);
-        margin: 0;
-        color: #fff;
-      }
-
-      .commitment-title span {
-        color: #ff668c;
-      }
-
-      .commitment-date {
-        margin: 12px auto 28px;
-        color: #ad9aaa;
-        font-size: 14px;
-        line-height: 1.7;
-      }
-
-      .commitment-date b {
-        color: #f1c3d2;
-      }
-
-      .commitment-timers {
-        display: grid;
-        grid-template-columns: repeat(4, 1fr);
-        gap: 14px;
-        max-width: 900px;
-        margin: 0 auto;
-      }
-
-      .commitment-timer {
-        background: rgba(255, 255, 255, 0.025);
-        border: 1px solid #302431;
-        border-radius: 16px;
-        padding: 24px 12px 20px;
-      }
-
-      .commitment-num {
-        font-size: clamp(27px, 4vw, 42px);
-        font-weight: 600;
-        color: #fff1f6;
-        font-variant-numeric: tabular-nums;
-        letter-spacing: -1px;
-        word-break: break-word;
-      }
-
-      .commitment-label {
-        margin-top: 9px;
-        color: #9c829c;
-        font-size: 9px;
-        letter-spacing: 2.5px;
-        text-transform: uppercase;
-      }
-
-      .commitment-note {
-        margin: 26px auto 0;
-        max-width: 720px;
-        color: #bba8b7;
-        line-height: 1.8;
-        font-family: "Playfair Display", serif;
-        font-size: 17px;
-      }
-
-      .forever {
-        margin-top: 22px;
-        color: #ff6f93;
-        font-family: Pacifico, cursive;
-        font-size: 25px;
-      }
-
       .section {
-        position: relative;
-        z-index: 1;
-        max-width: 1120px;
-        margin: 0 auto 75px;
-        padding: 0 24px;
+        max-width: 1150px;
+        margin: auto;
+        padding: 90px 24px;
       }
-      .section-title {
+      .section h2 {
         text-align: center;
-        font-family: "Playfair Display", serif;
-        font-size: 38px;
-        margin-bottom: 28px;
-        color: #f8eaf2;
+        font: 600 58px/1 "Cormorant Garamond";
+        margin: 12px 0 20px;
       }
-      .love-grid {
+      .intro {
+        text-align: center;
+        max-width: 720px;
+        margin: 0 auto 40px;
+        color: var(--muted);
+        line-height: 1.8;
+      }
+      .card,
+      .reason,
+      .promisebox,
+      .manglik {
+        background: linear-gradient(145deg, #281521, #140b13);
+        border: 1px solid var(--line);
+        border-radius: 28px;
+      }
+      .card {
+        padding: 50px;
+        box-shadow: 0 30px 80px #0005;
+      }
+      .wish {
+        font: 40px Pacifico;
+        text-align: center;
+        color: #ff82a5;
+      }
+      .card p,
+      .letter p {
+        font: 23px/1.65 "Cormorant Garamond";
+        max-width: 850px;
+        margin: 17px auto;
+        color: #f0d9e3;
+      }
+      .sig {
+        text-align: center;
+        font: 20px Pacifico;
+        color: #ef83a3;
+        margin-top: 25px;
+      }
+      .grid {
         display: grid;
         grid-template-columns: repeat(3, 1fr);
-        gap: 18px;
+        gap: 17px;
       }
-      .love-card {
-        background: linear-gradient(145deg, #17121a, #110e15);
-        border: 1px solid #2d2430;
-        border-radius: 20px;
-        padding: 30px;
-        min-height: 190px;
+      .reason {
+        padding: 28px;
+        min-height: 200px;
       }
-      .icon {
-        font-size: 25px;
-        color: #e45b80;
+      .reason b {
+        font: 40px "Cormorant Garamond";
+        color: #82566b;
       }
-      .love-card h3 {
-        margin: 13px 0 9px;
-        font-family: "Playfair Display", serif;
-        font-size: 23px;
-        color: #fff;
+      .reason h3 {
+        font: 28px "Cormorant Garamond";
+        margin: 8px 0;
       }
-      .love-card p {
+      .reason p {
+        color: var(--muted);
         line-height: 1.7;
-        color: #a99aa8;
-        margin: 0;
       }
-
-      .letter {
+      .gallery {
         display: grid;
-        grid-template-columns: 1.05fr 0.95fr;
-        gap: 24px;
+        grid-template-columns: repeat(3, 1fr);
+        gap: 14px;
       }
-      .paper {
-        background: #f7e7e9;
-        color: #402735;
-        padding: 40px;
-        border-radius: 15px;
-        box-shadow: 0 15px 40px rgba(0, 0, 0, 0.3);
-      }
-      .paper h3 {
-        font-family: Pacifico, cursive;
-        color: #9c244b;
-        font-size: 29px;
-        margin-top: 0;
-      }
-      .paper p {
-        font-family: "Playfair Display", serif;
-        font-size: 17px;
-        line-height: 1.9;
-      }
-      .art {
-        border-radius: 20px;
+      .photo {
+        height: 310px;
+        border-radius: 22px;
         overflow: hidden;
-        min-height: 370px;
-        background: #25151f;
-        border: 1px solid #342532;
+        border: 1px solid var(--line);
+        cursor: pointer;
       }
-      .art img {
+      .photo img {
+        width: 100%;
+        height: 100%;
+        object-fit: cover;
+        transition: 0.5s;
+      }
+      .photo:hover img {
+        transform: scale(1.05);
+      }
+      .tall {
+        height: 390px;
+      }
+      .wide {
+        grid-column: span 2;
+      }
+      .note {
+        text-align: center;
+        color: #7f6878;
+        font-size: 12px;
+        margin-top: 15px;
+      }
+      .kiss {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        gap: 28px;
+        align-items: center;
+      }
+      .kissimg {
+        height: 540px;
+        border-radius: 25px;
+        overflow: hidden;
+        border: 1px solid var(--line);
+      }
+      .kissimg img {
         width: 100%;
         height: 100%;
         object-fit: cover;
       }
-
-      .final {
-        margin-top: 80px;
-        padding: 90px 20px;
+      .kiss h3 {
+        font: 42px Pacifico;
+        color: #ff86a7;
+      }
+      .kiss p {
+        color: var(--muted);
+        line-height: 1.9;
+      }
+      .highlight {
+        font: 28px/1.45 "Cormorant Garamond";
+        color: #f3d5e1 !important;
+      }
+      .promisebox {
+        padding: 38px;
+      }
+      .promises {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        gap: 12px;
+      }
+      .promise {
+        padding: 20px;
+        background: #180d15;
+        border: 1px solid #3b2733;
+        border-radius: 16px;
+      }
+      .promise b {
+        color: #f4d9e3;
+      }
+      .promise p {
+        margin: 6px 0 0;
+        color: #a996a3;
+        line-height: 1.6;
+        font-size: 14px;
+      }
+      .manglik {
         text-align: center;
-        background: radial-gradient(circle at center, #311725 0, #120c14 65%);
-        border-top: 1px solid #2b1d2a;
+        padding: 45px;
+      }
+      .manglik h3 {
+        font: 43px "Cormorant Garamond";
+        margin: 12px;
+      }
+      .manglik p {
+        max-width: 750px;
+        margin: auto;
+        color: var(--muted);
+        line-height: 1.8;
+      }
+      .joke {
+        font: 26px "Cormorant Garamond";
+        color: #f0bfd1;
+        margin-top: 20px;
+      }
+      .letter {
+        background: #f8e9ed;
+        color: #412532;
+        border-radius: 22px;
+        padding: 50px;
+      }
+      .letter h3 {
+        font: 36px Pacifico;
+        color: #a52851;
+        margin-top: 0;
+      }
+      .letter p {
+        color: #412532;
+      }
+      .letter .sig {
+        text-align: right;
+      }
+      .envelope {
+        width: 180px;
+        height: 125px;
+        margin: 30px auto;
+        position: relative;
+        cursor: pointer;
+      }
+      .envbody {
+        position: absolute;
+        inset: 0;
+        background: #d65278;
+        border-radius: 10px;
+      }
+      .flap {
+        position: absolute;
+        left: 0;
+        right: 0;
+        top: 0;
+        height: 75px;
+        background: #ef7898;
+        clip-path: polygon(0 0, 100% 0, 50% 100%);
+        transform-origin: top;
+        transition: 0.7s;
+        z-index: 2;
+      }
+      .envelope.open .flap {
+        transform: rotateX(180deg);
+      }
+      .eh {
+        position: absolute;
+        z-index: 3;
+        left: 50%;
+        top: 42%;
+        transform: translate(-50%, -50%);
+        font-size: 30px;
+      }
+      .secret {
+        display: none;
+        max-width: 700px;
+        margin: auto;
+        padding: 25px;
+        background: #24131e;
+        border: 1px solid var(--line);
+        border-radius: 18px;
+        color: #d9bfcb;
+        line-height: 1.8;
+      }
+      .secret.show {
+        display: block;
+      }
+      .secret strong {
+        color: #ff7e9e;
+      }
+      .final {
+        text-align: center;
+        padding: 115px 20px;
+        background: radial-gradient(circle, #3a1729, #0d080e 65%);
+        border-top: 1px solid #2c1c27;
       }
       .final h2 {
-        font-family: Pacifico, cursive;
-        font-size: clamp(42px, 7vw, 72px);
-        font-weight: 400;
-        color: #ff668c;
-        margin: 0 0 15px;
+        font: normal clamp(45px, 8vw, 88px) Pacifico;
+        color: #ff789b;
       }
       .final p {
-        font-family: "Playfair Display", serif;
-        font-size: 20px;
-        color: #b99aaa;
+        font: 27px "Cormorant Garamond";
+        color: #e2c8d4;
       }
-      .signature {
-        font-family: Pacifico, cursive;
-        font-size: 21px;
-        color: #db6685;
-        margin-top: 28px;
+      .mrs {
+        font: 45px "Cormorant Garamond";
+      }
+      .mrs span {
+        color: #ff86a7;
       }
       footer {
         text-align: center;
-        padding: 23px;
-        color: #766477;
-        background: #08060c;
+        padding: 25px;
+        color: #755e6e;
         font-size: 12px;
-        border-top: 1px solid #17121b;
       }
-
-      @media (max-width: 850px) {
-        nav .links {
+      .modal {
+        position: fixed;
+        inset: 0;
+        z-index: 20;
+        background: #050308ee;
+        display: none;
+        align-items: center;
+        justify-content: center;
+        padding: 20px;
+      }
+      .modal.show {
+        display: flex;
+      }
+      .modal img {
+        max-width: 95%;
+        max-height: 88%;
+        border-radius: 16px;
+      }
+      .close {
+        position: absolute;
+        right: 20px;
+        top: 15px;
+        background: #fff2;
+        color: #fff;
+        border: 0;
+        border-radius: 50%;
+        font-size: 30px;
+        width: 45px;
+        height: 45px;
+      }
+      @media (max-width: 800px) {
+        .links {
           display: none;
         }
-        .countdown {
-          grid-template-columns: repeat(2, 1fr);
+        .grid,
+        .gallery {
+          grid-template-columns: 1fr 1fr;
         }
-        .timer-card.wide {
-          grid-column: 1/-1;
+        .wide {
+          grid-column: span 2;
         }
-        .love-grid,
-        .letter {
+        .kiss {
           grid-template-columns: 1fr;
         }
-
-        .commitment-timers {
-          grid-template-columns: repeat(2, 1fr);
+        .promises {
+          grid-template-columns: 1fr;
         }
       }
-      @media (max-width: 500px) {
-        .hero {
-          padding-top: 55px;
-        }
-        .countdown {
+      @media (max-width: 520px) {
+        .grid,
+        .gallery {
           grid-template-columns: 1fr;
         }
-        .timer-card.wide {
+        .wide {
           grid-column: auto;
         }
-        .timer-card {
-          min-height: 170px;
+        .section {
+          padding: 65px 18px;
         }
-
-        .commitment-box {
-          padding: 34px 18px 28px;
+        .section h2 {
+          font-size: 45px;
         }
-
-        .commitment-timers {
-          grid-template-columns: 1fr;
+        .card {
+          padding: 30px 20px;
         }
-        .num {
-          font-size: 42px;
+        .card p {
+          font-size: 20px;
         }
-        .section-title {
-          font-size: 31px;
+        .hero {
+          min-height: 650px;
         }
-        .paper {
-          padding: 28px;
+        .kissimg {
+          height: 370px;
+        }
+        .letter {
+          padding: 30px 20px;
+        }
+        .letter p {
+          font-size: 20px;
+        }
+        .manglik {
+          padding: 30px 18px;
         }
       }
     </style>
   </head>
   <body>
-    <nav>
+    <nav class="nav">
       <div class="logo">♡ mycutiehappy<span>.space</span></div>
       <div class="links">
-        <a href="#home">Home</a><a href="#commitment">Our Commitment</a><a href="#reasons">Reasons</a
-        ><a href="#letter">For You</a><a href="#countdown">Countdown</a>
-        <a class="love-btn" href="#final">I Love You ♡</a>
+        <a href="#wish">Birthday</a><a href="#memories">Memories</a
+        ><a href="#promises">Promises</a><a href="#letter">Letter</a
+        ><button class="btn" id="topLove">I Love You ♡</button>
       </div>
     </nav>
-
-    <main>
-      <section class="hero" id="home">
-        <div class="hearts">
-          <span class="heart h1">♡</span><span class="heart h2">♥</span
-          ><span class="heart h3">♡</span><span class="heart h4">♥</span>
-        </div>
-        <div class="kicker">Every way of counting the time left</div>
-        <h1>
-          Counting Every Second<br />Until <span>My Cutie's Birthday</span>
-        </h1>
+    <header class="hero">
+      <span class="heart h1">♡</span><span class="heart h2">♥</span
+      ><span class="heart h3">♡</span><span class="heart h4">♥</span>
+      <div>
+        <div class="eyebrow">18 October • Her day • My favourite day</div>
+        <h1>Happy Birthday<em>MERI JAAN ♡</em></h1>
         <p>
-          Because one countdown isn't enough for the girl who means this much to
-          me. Every week, every day, every hour, every minute and every second
-          takes us closer to your special day.
+          Today the world celebrates the girl who became my favourite person, my
+          pookie, my shona, my peace,MY happiest place — all at
+          once.
         </p>
-        <div class="hand">My Cutie Happy Space ♡</div>
-      </section>
-
-      <section class="countdown-wrap" id="countdown">
-        <div class="countdown">
-          <div class="timer-card">
-            <div class="timer-icon">◷</div>
-            <div class="num" id="weeks">0</div>
-            <div class="label">Total Weeks Left</div>
-          </div>
-          <div class="timer-card">
-            <div class="timer-icon">◌</div>
-            <div class="num" id="days">0</div>
-            <div class="label">Total Days Left</div>
-          </div>
-          <div class="timer-card">
-            <div class="timer-icon">⌁</div>
-            <div class="num" id="hours">0</div>
-            <div class="label">Total Hours Left</div>
-          </div>
-          <div class="timer-card">
-            <div class="timer-icon">⏱</div>
-            <div class="num" id="minutes">0</div>
-            <div class="label">Total Minutes Left</div>
-          </div>
-          <div class="timer-card wide">
-            <div class="timer-icon">✦</div>
-            <div class="num" id="seconds">0</div>
-            <div class="label">Total Seconds Left</div>
-          </div>
-        </div>
-        <div class="next" id="status">
-          Counting down to <b>18 October 2026 ♡</b>
-        </div>
-      </section>
-
-
-      <section class="commitment-wrap" id="commitment">
-        <div class="commitment-box">
-          <div class="commitment-kicker">The moment our forever began ♡</div>
-          <h2 class="commitment-title">Our <span>Commitment</span></h2>
-
-          <div class="commitment-date">
-            We got committed on <b>1 September 2026 at 1:07 AM</b> —
-            the night I proposed to you on call. ♡
-          </div>
-
-          <div class="commitment-timers">
-            <div class="commitment-timer">
-              <div class="commitment-num" id="commitDays">0</div>
-              <div class="commitment-label">Days Together</div>
-            </div>
-
-            <div class="commitment-timer">
-              <div class="commitment-num" id="commitHours">0</div>
-              <div class="commitment-label">Total Hours</div>
-            </div>
-
-            <div class="commitment-timer">
-              <div class="commitment-num" id="commitMinutes">0</div>
-              <div class="commitment-label">Total Minutes</div>
-            </div>
-
-            <div class="commitment-timer">
-              <div class="commitment-num" id="commitSeconds">0</div>
-              <div class="commitment-label">Total Seconds</div>
-            </div>
-          </div>
-
-          <p class="commitment-note">
-            From that one call at 1:07 AM, our story became a little more special.
-            Every second since then is a second I get to call you <i>my person</i>.
+        <button
+          class="btn"
+          onclick="
+            document
+              .querySelector('#wish')
+              .scrollIntoView({ behavior: 'smooth' })
+          "
+        >
+          Come read what your pookie wrote ↓
+        </button>
+      </div>
+    </header>
+    <section class="section" id="wish">
+      <div class="kicker">For the girl I call</div>
+      <h2>My Babu. Meri Jaan. Mera Bacha.</h2>
+      <div class="card">
+        <div class="wish">Happy Birthday, JAANU ♡</div>
+        <p>
+          18 October isn't just your birthday anymore. It's the day my favourite
+          human came into this world.
+        </p>
+        <p>
+          You are my <b>pyaar, shona, kaka, pookie, meri jaan</b> and also the
+          person who makes me laugh at the sad moments(you know it recently).
+        </p>
+        <p>
+          We are literally the same same kind of stupid. That's probably why
+          we're so good together. 😂❤️
+        </p>
+        <p>
+          I hope this year gives you the happiness you deserve — and I hope I
+          get to be there for a very, very long time while you collect it.
+        </p>
+        <div class="sig">Your pookie, always ♡</div>
+      </div>
+    </section>
+    <section class="section">
+      <div class="kicker">A scientifically accurate list</div>
+      <h2>Reasons You're My Favourite Human</h2>
+      <div class="grid">
+        <div class="reason">
+          <b>01</b>
+          <h3>Your smile.</h3>
+          <p>
+            It can completely change my mood. Annoyingly powerful. Completely
+            unfair.
           </p>
-
-          <div class="forever">
-            My promise: we will be committed forever. ∞♡
+        </div>
+        <div class="reason">
+          <b>02</b>
+          <h3>Our stupidity.</h3>
+          <p>
+            Same same. Stupid stupid. Somehow our nonsense is my favourite part
+            of us.
+          </p>
+        </div>
+        <div class="reason">
+          <b>03</b>
+          <h3>You call me Baiya.</h3>
+          <p>
+            Still processing how the girl I want to marry decided “Baiya” was
+            reasonable. 😂
+          </p>
+        </div>
+        <div class="reason">
+          <b>04</b>
+          <h3>My Barbie.</h3>
+          <p>
+            You call me Barbie, I call you my cutie. Our naming department is
+            elite.
+          </p>
+        </div>
+        <div class="reason">
+          <b>05</b>
+          <h3>You let me care.</h3>
+          <p>
+            I love checking on you, looking after you and remembering the little
+            things.
+          </p>
+        </div>
+        <div class="reason">
+          <b>06</b>
+          <h3>You feel like home.</h3>
+          <p>
+            Some people become memories. Somehow, you became a place I want to
+            keep coming back to.
+          </p>
+        </div>
+      </div>
+    </section>
+    <section class="section" id="memories">
+      <div class="kicker">Our little universe</div>
+      <h2>Us, Being Us ♡</h2>
+      <p class="intro">
+        I've left six beautiful spaces for our memories. 
+      </p>
+      <div class="gallery">
+        <div class="photo tall">
+          <img src="photos/1.jpeg" alt="Memory 1" />
+        </div>
+        <div class="photo"><img src="photos/3.jpeg" alt="Memory 2" /></div>
+        <div class="photo"><img src="photos/2.jpeg" alt="Memory 3" /></div>
+        <div class="photo"><img src="photos/4.jpeg" alt="Memory 4" /></div>
+        <div class="photo"><img src="photos/5.jpeg" alt="Memory 5" /></div>
+        
+      </div>
+      <div class="note">Click any photo to view it larger.</div>
+    </section>
+    <section class="section">
+      <div class="kicker">A very important photograph</div>
+      <h2>That Little Kiss ♡</h2>
+      <div class="kiss">
+        <div class="kissimg">
+          <img src="photos/kiss.jpeg" alt="Our kiss photo" />
+        </div>
+        <div>
+          <h3>My favourite kind of moment.</h3>
+          <p class="highlight">
+            “Some pictures are just pictures. Some become memories I want to
+            keep forever.”
+          </p>
+          <p>
+            This one is for that photo — the one where I look at you and think,
+            “haan, this is my girl."
+          </p>
+        </div>
+      </div>
+    </section>
+    <section class="section" id="promises">
+      <div class="kicker">Not just birthday wishes</div>
+      <h2>The Things I Want To Keep Promising You</h2>
+      <div class="promisebox">
+        <div class="promises">
+          <div class="promise">
+            <b>♡ I will choose you.</b>
+            <p>Not only on easy days. I want to keep choosing us as we grow.</p>
+          </div>
+          <div class="promise">
+            <b>♡ I will take care of you.</b>
+            <p>
+              I'll keep being the person who asks if you've eaten, reached
+              safely and are okay.
+            </p>
+          </div>
+          <div class="promise">
+            <b>♡ I will listen.</b>
+            <p>
+              Even when I don't immediately understand, I want to understand you
+              better.
+            </p>
+          </div>
+          <div class="promise">
+            <b>♡ I will keep making you laugh.</b>
+            <p>Our stupid jokes deserve a lifetime contract.</p>
+          </div>
+          <div class="promise">
+            <b>♡ I want a future with you.</b>
+            <p>
+              I genuinely want our story to go much further than birthdays and
+              anniversaries.
+            </p>
+          </div>
+          <div class="promise">
+            <b>♡ One day: Mrs. Mishti Manocha.</b>
+            <p>
+              Yes, I'm putting that dream on the website. Just my heart being
+              honest. ❤️
+            </p>
+          </div>
+          <div class="promise">
+            <b>♡ Your family will be my family.</b>
+            <p>
+              I want to earn their love and respect and be like a son to them —
+              not just someone who loves their daughter.
+            </p>
+          </div>
+          <div class="promise">
+            <b>♡ We'll grow together.</b>
+            <p>
+              Careers, families, responsibilities, silly holidays and everything
+              life throws at us — together.
+            </p>
           </div>
         </div>
-      </section>
-
-      <section class="section" id="reasons">
-        <h2 class="section-title">Little Things I Love About You</h2>
-        <div class="love-grid">
-          <article class="love-card">
-            <div class="icon">♡</div>
-            <h3>You are my happy place</h3>
-            <p>
-              No matter what happens, being with you feels right. You make even
-              ordinary moments feel special.
-            </p>
-          </article>
-          <article class="love-card">
-            <div class="icon">✦</div>
-            <h3>My Cutie</h3>
-            <p>
-              Your smile, your voice, your silly talks, your cute anger — I love
-              all of it. Just you, always.
-            </p>
-          </article>
-          <article class="love-card">
-            <div class="icon">∞</div>
-            <h3>Bby meri jaan</h3>
-            <p>
-              I miss you always. Even when you're not beside me, a little part
-              of my mind is always with you.
-            </p>
-          </article>
+      </div>
+    </section>
+    <section class="section">
+      <div class="manglik">
+        <div style="font-size: 44px">🔥❤️🔥</div>
+        <div class="kicker">The universe has jokes too</div>
+        <h3>Two Mangliks. One Marriage Plan. 😂</h3>
+        <p>
+          Apparently both of us came with the same cosmic “special feature.” So
+          I'm taking it as the universe saying: “Fine, these two idiots are
+          equally complicated. Let them figure it out together.”
+        </p>
+        <div class="joke">
+          Manglik + Manglik = okay universe, now just let us get married. 😭❤️
         </div>
-      </section>
-
-      <section class="section" id="letter">
-        <div class="letter">
-          <div class="paper">
-            <h3>To my Cutie ♡</h3>
-            <p>
-              Sometimes I don't say it perfectly, but I hope you always know how
-              much you mean to me.
-            </p>
-            <p>
-              I miss you in the random moments, when I see something you'd laugh
-              at, when I want to tell you something first, and whenever I just
-              wish you were beside me.
-            </p>
-            <p>
-              You're my bby, meri jaan, my cutie, and my favourite person to
-              annoy. I don't need a special day to love you — but I definitely
-              need one to celebrate <i>you</i>.
-            </p>
-            <p><b>Happy birthday in advance, my cutie. ♡</b></p>
-          </div>
-          <div class="art">
-            <img src="romantic-art.jpeg" alt="Romantic pastel artwork" />
-          </div>
+      </div>
+    </section>
+    <section class="section">
+      <div class="kicker">A small confession</div>
+      <h2>I'm Sorry, Babu ♡</h2>
+      <div class="card">
+        <p>
+          I'm not perfect. Sometimes my anger gets the better of me, and I'm
+          genuinely sorry for the moments where I've made things harder than
+          they needed to be.
+        </p>
+        <p>
+          I'm working on becoming calmer, better and more deserving of the trust
+          and love you give me.
+        </p>
+        <p>
+          I don't want this to become a sad paragraph on your birthday. I just
+          want you to know that I see it, I care about it and I want to do
+          better — because <b>you matter to me.</b>
+        </p>
+      </div>
+    </section>
+    <section class="section" style="text-align: center">
+      <div class="kicker">One secret from your pookie</div>
+      <h2>Open This ♡</h2>
+      <p class="intro">Tap the envelope. I hid one more message inside.</p>
+      <div class="envelope" id="env">
+        <div class="envbody"></div>
+        <div class="flap"></div>
+        <div class="eh">♡</div>
+      </div>
+      <div class="secret" id="secret">
+        <strong>jaanu, meri jaan…</strong><br /><br />If you ever wonder how
+        serious I am about you, remember this: I don't just imagine the next
+        birthday. I imagine the birthdays after that too. I want to know your
+        favourite little things years from now, annoy you when we're old, take
+        care of you when you're tired, celebrate your wins and be the person
+        standing beside you when life gets difficult.<br /><br />I want to love
+        you in ordinary days too — not only in pretty words on a website.<br /><br />So
+        yes, my pookie is being extremely cheesy today. Please tolerate me. I
+        have a lifetime's worth of it planned. ❤️
+      </div>
+    </section>
+    <section class="section" id="letter">
+      <div class="kicker">From my heart</div>
+      <h2>Dear cutie happy space,</h2>
+      <div class="letter">
+        <h3>Happy Birthday, meri jaan ♡</h3>
+        <p>
+          There are people who enter your life and slowly become important. And
+          then there are people who become part of the way you think, the way
+          you laugh, the things you look forward to and the person you want
+          beside you.
+        </p>
+        <p>You're that person for me.</p>
+        <p>
+          You are my babu, my bacha, my pyaar, my shona kaka, my cutie, my
+          pookie and my favourite persob❤️ I love how we can be completely
+          stupid together and still somehow understand each other. I love the
+          names, jokes, random conversations, care, comfort and the feeling that
+          I can just be myself with you.
+        </p>
+        <p>
+          When I say I want a future with you, I mean it. I want a life where
+          your family feels that I am their son too, where you feel safe with
+          me, where we celebrate each other's achievements and where “us” isn't
+          just something we say — it's something we build.
+        </p>
+        <p>
+          I don't know exactly what every year ahead will look like. But I know
+          who I want beside me while I find out.
+        </p>
+        <p>
+          So on your birthday, my only wish is that you smile a lot, feel
+          incredibly loved and never forget that somewhere there is one very
+          stupid boy who is ridiculously grateful that <i>his</i> Mishti exists.
+        </p>
+        <p>
+          Happy birthday, my bby. I love you more than this website can fit. And
+          yes… I fully intend to make that “Mrs. Mishti Manocha” line real one
+          day. ❤️
+        </p>
+        <div class="sig">
+          Always your pookie,<br />your Baiya / Barbie / idiot ♡
         </div>
-      </section>
-
-      <section class="section">
-        <h2 class="section-title">One More Thing...</h2>
-        <div class="love-grid">
-          <article class="love-card">
-            <div class="icon">🎀</div>
-            <h3>Don't forget</h3>
-            <p>
-              You are loved. You are missed. You are appreciated. And yes… you
-              are still my cutie.
-            </p>
-          </article>
-          <article class="love-card">
-            <div class="icon">🌷</div>
-            <h3>Birthday promise</h3>
-            <p>
-              I want your birthday to feel as warm, happy and beautiful as the
-              happiness you bring into my life.
-            </p>
-          </article>
-          <article class="love-card">
-            <div class="icon">💗</div>
-            <h3>Always us</h3>
-            <p>
-              More birthdays, more memories, more laughter, more stupid little
-              fights and making up afterwards. Always us.
-            </p>
-          </article>
-        </div>
-      </section>
-
-      <section class="final" id="final">
-        <h2>I Love You, My Cutie ♡</h2>
-        <p>You are my happy space. Today, tomorrow, and all the days after.</p>
-        <div class="signature">Always yours, bby meri jaan ♡</div>
-      </section>
-    </main>
+      </div>
+    </section>
+    <section class="final" id="final">
+      <div class="kicker">And finally...</div>
+      <h2>I Love You, mera pyaar beshumaar ♡</h2>
+      <p>My babu. Meri jaan. Mera bacha. Mera pyaar. Mera shona kaka.</p>
+      <div class="mrs">Future <span>Mrs. Mishti Manocha</span> ♡</div>
+      <button class="btn" id="celebrate">
+        Tap this if you love your pookie ♡
+      </button>
+    </section>
     <footer>
-      Made with too much love for the cutest girl ever ♡ · mycutiehappy.space
+      Made with love, stupidity and an unreasonable amount of feelings · for
+      Mishti ♡
     </footer>
-
+    <div class="modal" id="modal">
+      <button class="close" id="close">×</button><img id="modalimg" />
+    </div>
     <script>
-      // Birthday countdown
-      const target = new Date("2026-10-18T00:00:00+05:30");
-
-      // The exact moment we got committed:
-      // 1 September 2026, 1:07 AM IST (UTC+05:30)
-      const commitmentStart = new Date("2026-09-01T01:07:00+05:30");
-
-      const els = {
-        weeks: document.getElementById("weeks"),
-        days: document.getElementById("days"),
-        hours: document.getElementById("hours"),
-        minutes: document.getElementById("minutes"),
-        seconds: document.getElementById("seconds"),
-        status: document.getElementById("status"),
-        commitDays: document.getElementById("commitDays"),
-        commitHours: document.getElementById("commitHours"),
-        commitMinutes: document.getElementById("commitMinutes"),
-        commitSeconds: document.getElementById("commitSeconds")
+      const e = document.getElementById("env"),
+        s = document.getElementById("secret");
+      e.onclick = () => {
+        e.classList.toggle("open");
+        s.classList.toggle("show");
       };
-
-      const fmt = (n) => n.toLocaleString("en-IN");
-
-      function updateCountdown() {
-        const diff = Math.max(0, target.getTime() - Date.now());
-        const totalSeconds = Math.floor(diff / 1000);
-        const totalMinutes = Math.floor(totalSeconds / 60);
-        const totalHours = Math.floor(totalMinutes / 60);
-        const totalDays = Math.floor(totalHours / 24);
-        const totalWeeks = Math.floor(totalDays / 7);
-
-        els.weeks.textContent = fmt(totalWeeks);
-        els.days.textContent = fmt(totalDays);
-        els.hours.textContent = fmt(totalHours);
-        els.minutes.textContent = fmt(totalMinutes);
-        els.seconds.textContent = fmt(totalSeconds);
-
-        if (diff <= 0) {
-          els.status.innerHTML = "<b>IT'S YOUR BIRTHDAY, MY CUTIE! 🎂♡</b>";
-          document.title = "Happy Birthday, My Cutie ♡";
+      const modal = document.getElementById("modal"),
+        mi = document.getElementById("modalimg");
+      document.querySelectorAll(".photo img,.kissimg img").forEach(
+        (x) =>
+          (x.onclick = () => {
+            mi.src = x.src;
+            modal.classList.add("show");
+          }),
+      );
+      document.getElementById("close").onclick = () =>
+        modal.classList.remove("show");
+      modal.onclick = (x) => {
+        if (x.target === modal) modal.classList.remove("show");
+      };
+      function burst() {
+        for (let i = 0; i < 50; i++) {
+          let x = document.createElement("span");
+          x.textContent = ["♡", "♥", "✦", "✨", "💗"][
+            Math.floor(Math.random() * 5)
+          ];
+          x.style.cssText = `position:fixed;z-index:50;left:${Math.random() * 100}vw;top:-20px;color:#ff7095;font-size:${14 + Math.random() * 18}px;transition:2.4s;pointer-events:none`;
+          document.body.append(x);
+          requestAnimationFrame(() => {
+            x.style.transform = `translate(${(Math.random() - 0.5) * 220}px,${innerHeight + 80}px) rotate(500deg)`;
+            x.style.opacity = 0;
+          });
+          setTimeout(() => x.remove(), 2500);
         }
       }
-
-      function updateCommitmentTimer() {
-        const diff = Math.max(0, Date.now() - commitmentStart.getTime());
-
-        const totalSeconds = Math.floor(diff / 1000);
-        const totalMinutes = Math.floor(totalSeconds / 60);
-        const totalHours = Math.floor(totalMinutes / 60);
-        const totalDays = Math.floor(totalHours / 24);
-
-        els.commitDays.textContent = fmt(totalDays);
-        els.commitHours.textContent = fmt(totalHours);
-        els.commitMinutes.textContent = fmt(totalMinutes);
-        els.commitSeconds.textContent = fmt(totalSeconds);
-      }
-
-      function updateAll() {
-        updateCountdown();
-        updateCommitmentTimer();
-      }
-
-      updateAll();
-      setInterval(updateAll, 1000);
+      document.getElementById("celebrate").onclick = burst;
+      document.getElementById("topLove").onclick = () => {
+        document.getElementById("final").scrollIntoView({ behavior: "smooth" });
+        setTimeout(burst, 400);
+      };
     </script>
   </body>
 </html>
